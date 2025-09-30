@@ -1,0 +1,39 @@
+Chi-Square Feature Selection Report for Cancer Classification
+==================================================
+Dataset: 285 rows, 20373 columns
+Maximum number of unique values: 285 (in column 'Unnamed: 0')
+Unique values in 'cancer' column: [np.int64(1), np.int64(0)]
+Columns with one unique value (excluded): 0
+Total columns analyzed for Chi-Square: 20372
+Meaningful columns (p < 0.05): 5545 (27.2%)
+Columns to drop (p >= 0.05): 14827 (72.8%)
+Mean p-value for meaningful columns: 0.0056
+Mean p-value for dropped columns: 0.7919
+Highest odds ratio (binary columns): 0.15
+Lowest p-value (most significant): 0.0000
+
+Top 10 Meaningful Columns (by Chi-Square p-value):
+                     chi2  p_value  dof  odds_ratio  unique_count
+ENSG00000243491  194.6877      0.0   25         NaN            26
+ENSG00000251435  181.2459      0.0   25         NaN            26
+ENSG00000131095  159.1350      0.0   19         NaN            20
+ENSG00000179010  213.3501      0.0   44         NaN            45
+ENSG00000159884  144.7071      0.0   14         NaN            15
+ENSG00000137720  173.6056      0.0   26         NaN            27
+ENSG00000117318  178.5457      0.0   29         NaN            30
+ENSG00000181031  173.4665      0.0   27         NaN            28
+ENSG00000272373  116.7893      0.0    7         NaN             8
+ENSG00000237281  136.2199      0.0   14         NaN            15
+
+Bottom 10 Columns (by Chi-Square p-value, candidates for drop):
+                    chi2  p_value  dof  odds_ratio  unique_count
+ENSG00000185621  25.0986      1.0   98         NaN            99
+ENSG00000236279   7.9879      1.0   56         NaN            57
+ENSG00000095319  12.9475      1.0   70         NaN            71
+ENSG00000066044   4.8068      1.0   46         NaN            47
+ENSG00000188906  26.9683      1.0  104         NaN           105
+ENSG00000112077   8.3505      1.0   60         NaN            61
+ENSG00000156381   3.1761      1.0   42         NaN            43
+ENSG00000182463  24.8580      1.0  120         NaN           121
+ENSG00000131188   1.7893      1.0   42         NaN            43
+ENSG00000238683  27.9776      1.0  112         NaN           113
